@@ -1,14 +1,162 @@
-<!DOCTYPE html>
 <html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>My First Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organ Donation Uganda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        /* Top Header & Green Button */
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo { font-weight: bold; font-size: 1.2em; }
+        .donor-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            border: 2px solid white;
+        }
+        /* Navigation Menu */
+        nav {
+            background: white;
+            padding: 10px;
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            border-bottom: 2px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #2e7d32;
+            font-weight: bold;
+        }
+        /* Main Content Sections */
+        section {
+            padding: 20px;
+            background: white;
+            margin: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #2e7d32;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+        h3 { color: #555; margin-bottom: 5px; }
+        ul { padding-left: 20px; }
+        
+        /* Highlight the Donor Registration section as the "main page" */
+        #register {
+            border: 2px solid #4CAF50;
+            background-color: #e8f5e9; 
+        }
+    </style>
 </head>
-<body style="background-color: #1a1a1a; color: white; text-align: center; font-family: sans-serif; padding-top: 50px;">
-  <h1>Hello World!</h1>
-  <p>This is my very first website hosted on GitHub.</p>
+<body>
+
+    <!-- HEADER WITH THE GREEN BUTTON -->
+    <header>
+        <div class="logo">Organ Donation UG</div>
+        <a href="#register" class="donor-btn">BE A DONOR</a>
+    </header>
+
+    <!-- NAVIGATION MENU -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#who">Who Can Donate</a>
+        <a href="#register">Register</a>
+        <a href="#patients">For Patients</a>
+        <a href="#faqs">FAQs</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- CONTENT SECTIONS -->
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>Welcome to our Organ Donation awareness platform. Learn how you can save lives in Uganda.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Organ Donation</h2>
+        <h3>What is Organ Donation?</h3>
+        <p>Organ donation is the process of surgically removing an organ or tissue from one person (the organ donor) and placing it into another person (the recipient).</p>
+        
+        <h3>Why It Matters in Uganda</h3>
+        <p>Many patients in Uganda suffer from organ failure. Raising awareness and increasing donor registration can save countless lives.</p>
+    </section>
+
+    <section id="who">
+        <h2>Who Can Donate</h2>
+        <h3>Can I Donate?</h3>
+        <p>Most people can be considered as potential donors. Age and medical history will be evaluated at the time of donation.</p>
+        
+        <h3>Myths & Facts</h3>
+        <ul>
+            <li><strong>Myth:</strong> It is against my culture. <br><strong>Fact:</strong> Many cultures view donation as an act of charity.</li>
+            <li><strong>Myth:</strong> It costs money. <br><strong>Fact:</strong> The donor's family is never charged for donation.</li>
+        </ul>
+        
+        <h3>Religious Views</h3>
+        <p>Most major religions, including Christianity and Islam, support organ donation as an act of saving life.</p>
+    </section>
+
+    <section id="register">
+        <h2>Donor Registration (Main Page)</h2>
+        <p><strong>Ready to save a life?</strong> Join our registry today.</p>
+        
+        <h3>Living vs Deceased Donation</h3>
+        <p><strong>Living:</strong> A living person can donate a kidney or part of their liver.<br>
+        <strong>Deceased:</strong> Organs are donated after a person has passed away.</p>
+        
+        <br>
+        <a href="#" class="donor-btn" style="display:inline-block;">Click Here to Register</a>
+    </section>
+
+    <section id="patients">
+        <h2>For Patients</h2>
+        <h3>Need an Organ?</h3>
+        <p>If you or a loved one requires a transplant, please consult your doctor to be added to the waiting list.</p>
+        
+        <h3>Transplant Process</h3>
+        <p>The process involves medical evaluation, finding a matching donor, and surgery, followed by recovery.</p>
+    </section>
+
+    <section id="faqs">
+        <h2>FAQs</h2>
+        <p>Got questions? Here we will list frequently asked questions about organ donation.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@organdonation.ug</p>
+        <p>Phone: +256 XXX XXX XXX</p>
+    </section>
+
 </body>
 </html>
-
 
 
 
